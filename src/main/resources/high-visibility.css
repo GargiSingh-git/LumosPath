@@ -1,0 +1,113 @@
+/* Colorful High-Visibility Theme */
+/* Accessible palette: navy headers, teal accents, warm buttons, light background */
+root, .root {
+    -fx-base: #ffffff;
+    -fx-background-color: #fbfdff;
+}
+
+/* Typography */
+Label, .label, .form-label, .header-subtitle {
+    -fx-text-fill: #0f172a; /* near black navy */
+    -fx-font-size: 14px;
+}
+
+.header-title, .welcome-title {
+    -fx-text-fill: #07103a; /* deep navy */
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+}
+
+/* Buttons and navigation */
+.nav-button, .primary-button {
+    -fx-background-color: linear-gradient(to bottom, #06b6d4, #0891b2);
+    -fx-text-fill: white;
+    -fx-font-weight: 600;
+}
+
+.secondary-button, .nav-card {
+    -fx-background-color: #f0f6f8;
+    -fx-text-fill: #0f172a;
+}
+
+.nav-button:hover, .primary-button:hover {
+    -fx-background-color: linear-gradient(to bottom, #0891b2, #03636f);
+}
+
+/* Chat area */
+.chat-area, .chat-messages, .surface-card, .main-container {
+    -fx-background-color: white;
+    -fx-text-fill: #0f172a;
+}
+
+.bot-message {
+    -fx-background-color: #eef7fb;
+    -fx-text-fill: #063251;
+}
+
+.user-message {
+    -fx-background-color: #fff7ed;
+    -fx-text-fill: #4a2f05;
+}
+
+.system-message {
+    -fx-background-color: #fffbeb;
+    -fx-text-fill: #92400e;
+}
+
+/* Inputs */
+.form-field, .text-field, .text-area {
+    -fx-background-color: white;
+    -fx-control-inner-background: white;
+    -fx-text-fill: #0f172a;
+    -fx-prompt-text-fill: #6b7280;
+}
+
+/* Navigation and tab bar */
+.nav-card, .tab-pane, .menu-bar {
+    -fx-background-color: #fbfdff;
+}
+
+/* List and selection */
+.list-cell, .list-view {
+    -fx-background-color: white;
+    -fx-text-fill: #0f172a;
+}
+.list-cell:selected {
+    -fx-background-color: #06b6d4;
+    -fx-text-fill: white;
+}
+
+/* Make sure text is legible even if other styles try to hide it */
+Label, Button, TextField, TextArea, ListCell, MenuItem, TabPane {
+    -fx-text-fill: #0f172a;
+}
+/* High Visibility Overrides - minimal, strong overrides to ensure text is readable */
+* {
+    -fx-text-fill: black !important;
+    -fx-fill: black !important;
+    -fx-base: white !important;
+    -fx-background-color: white !important;
+}
+
+Label, .label, TextField, .text-field, TextArea, .text-area, Button, .button, ListCell, .list-cell, MenuItem, .menu-item {
+    -fx-text-fill: black !important;
+    -fx-background-color: white !important;
+}
+
+.bot-message, .user-message, .system-message, .chat-message {
+    -fx-text-fill: black !important;
+    -fx-background-color: #f8f8f8 !important;
+}
+
+.header-title, .header-subtitle, .welcome-message {
+    -fx-text-fill: black !important;
+}
+
+.nav-button, .primary-button, .secondary-button {
+    -fx-text-fill: black !important;
+    -fx-background-color: #f0f0f0 !important;
+}
+
+.form-field, .form-label {
+    -fx-text-fill: black !important;
+}

@@ -1,0 +1,1162 @@
+/* ================================================
+   LumosPath - Clean Modern Mental Health Theme
+   Calming, professional mental health support application styling
+   Based on clean light backgrounds with subtle pastel accents
+   ================================================ */
+
+/* Root Variables - Clean Light Theme */
+.root {
+    /* Primary Colors - Calming Teal */
+    -fx-primary-color: #0ea5a4;
+    -fx-primary-hover: #0891b2;
+    -fx-primary-dark: #0e7490;
+    -fx-primary-light: #22d3ee;
+    
+    /* Secondary Colors - Soft Pastels */
+    -fx-secondary-color: #f59e0b;
+    -fx-secondary-hover: #d97706;
+    -fx-accent-color: #10b981;
+    -fx-accent-hover: #059669;
+    
+    /* Status Colors - Calming */
+    -fx-success-color: #4CAF50;
+    -fx-warning-color: #f59e0b;
+    -fx-error-color: #ef4444;
+    -fx-info-color: #3b82f6;
+    
+    /* Background Colors - Gradient Light (No White) */
+    -fx-bg-primary: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 50%, #e2e8f0 100%);
+    -fx-bg-secondary: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 50%, #cbd5e1 100%);
+    -fx-bg-tertiary: linear-gradient(135deg, #e2e8f0 0%, #cbd5e1 50%, #94a3b8 100%);
+    -fx-bg-surface: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+    -fx-bg-surface-elevated: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
+    
+    /* Text Colors - Professional Dark */
+    -fx-text-primary: #333333;
+    -fx-text-secondary: #757575;
+    -fx-text-muted: #9ca3af;
+    -fx-text-light: #d1d5db;
+    
+    /* Border Colors - Subtle */
+    -fx-border-light: #e5e7eb;
+    -fx-border-medium: #d1d5db;
+    -fx-border-dark: #9ca3af;
+    
+    /* Shadow Colors - Soft */
+    -fx-shadow-sm: rgba(0, 0, 0, 0.05);
+    -fx-shadow-md: rgba(0, 0, 0, 0.1);
+    -fx-shadow-lg: rgba(0, 0, 0, 0.15);
+    -fx-shadow-xl: rgba(0, 0, 0, 0.2);
+    
+    /* Typography */
+    -fx-font-family-primary: "Segoe UI", "Inter", system-ui, -apple-system, sans-serif;
+    -fx-font-family-secondary: "Segoe UI Semibold", "Inter SemiBold", system-ui, sans-serif;
+    -fx-font-family-mono: "JetBrains Mono", "Fira Code", monospace;
+    
+    -fx-font-size: 14px;
+    -fx-background-color: -fx-bg-primary;
+    -fx-font-family: -fx-font-family-primary;
+}
+
+/* Welcome Screen Styling - Clean & Calming */
+.welcome-container {
+    -fx-background-color: -fx-bg-primary;
+    -fx-alignment: center;
+    -fx-spacing: 40px;
+    -fx-padding: 60px 40px;
+}
+
+.welcome-card {
+    -fx-background-color: -fx-bg-surface-elevated;
+    -fx-background-radius: 20px;
+    -fx-border-radius: 20px;
+    -fx-effect: dropshadow(gaussian, -fx-shadow-md, 20, 0, 0, 4);
+    -fx-padding: 48px;
+    -fx-max-width: 500px;
+    -fx-spacing: 32px;
+    -fx-border-color: -fx-border-light;
+    -fx-border-width: 1px;
+}
+
+.welcome-title {
+    -fx-font-family: -fx-font-family-secondary;
+    -fx-font-size: 48px;
+    -fx-font-weight: 700;
+    -fx-text-fill: -fx-text-primary;
+    -fx-text-alignment: center;
+}
+
+.welcome-subtitle {
+    -fx-font-size: 18px;
+    -fx-font-weight: 400;
+    -fx-text-fill: -fx-text-secondary;
+    -fx-text-alignment: center;
+    -fx-wrap-text: true;
+}
+
+.card-title {
+    -fx-font-size: 18px;
+    -fx-font-weight: 700;
+    -fx-text-fill: #f8fafc;
+}
+
+.card-description {
+    -fx-font-size: 14px;
+    -fx-text-fill: rgba(255,255,255,0.9);
+}
+
+.welcome-separator {
+    -fx-background-color: rgba(0,0,0,0.3);
+    -fx-pref-height: 1px;
+    -fx-max-width: 240px;
+}
+
+
+/* Clean Modern Buttons - Solid Colors */
+.button {
+    -fx-background-color: #0ea5a4;
+    -fx-text-fill: #f8fafc;
+    -fx-background-radius: 8px;
+    -fx-font-weight: 600;
+    -fx-font-size: 16px;
+    -fx-padding: 12px 24px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, -fx-shadow-sm, 8, 0, 0, 2);
+    -fx-border-width: 0;
+}
+
+.button:hover {
+    -fx-background-color: #0891b2;
+    -fx-effect: dropshadow(gaussian, -fx-shadow-md, 10, 0, 0, 3);
+}
+
+.button:pressed {
+    -fx-background-color: #0e7490;
+    -fx-effect: dropshadow(gaussian, -fx-shadow-sm, 6, 0, 0, 1);
+}
+
+/* Sign In: Solid Teal */
+.sign-in-button {
+    -fx-background-color: #0ea5a4;
+    -fx-text-fill: #f8fafc;
+    -fx-background-radius: 8px;
+    -fx-effect: dropshadow(gaussian, -fx-shadow-sm, 8, 0, 0, 2);
+    -fx-font-size: 16px;
+    -fx-font-weight: 600;
+    -fx-padding: 12px 24px;
+}
+
+/* Create Account: Solid Green */
+.create-account-button {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: #f8fafc;
+    -fx-background-radius: 8px;
+    -fx-effect: dropshadow(gaussian, -fx-shadow-sm, 8, 0, 0, 2);
+    -fx-font-size: 16px;
+    -fx-font-weight: 600;
+    -fx-padding: 12px 24px;
+}
+
+/* Guest: Solid Gray */
+.guest-button {
+    -fx-background-color: #6b7280;
+    -fx-text-fill: #f8fafc;
+    -fx-background-radius: 8px;
+    -fx-effect: dropshadow(gaussian, -fx-shadow-sm, 8, 0, 0, 2);
+    -fx-font-size: 16px;
+    -fx-font-weight: 600;
+    -fx-padding: 12px 24px;
+}
+
+/* Labels and text styling - Clean & Professional */
+.muted-text {
+    -fx-font-size: 14px;
+    -fx-font-weight: 400;
+    -fx-text-fill: -fx-text-secondary;
+}
+
+.muted-small {
+    -fx-font-size: 12px;
+    -fx-font-weight: 400;
+    -fx-text-fill: -fx-text-muted;
+}
+
+.form-label {
+    -fx-font-size: 14px;
+    -fx-font-weight: 600;
+    -fx-text-fill: -fx-text-primary;
+}
+
+.privacy-note {
+    -fx-font-size: 13px;
+    -fx-font-weight: 400;
+    -fx-text-fill: -fx-text-secondary;
+    -fx-text-alignment: center;
+    -fx-wrap-text: true;
+}
+
+/* Chat Interface - Clean & Calming */
+.chat-container {
+    -fx-background-color: -fx-bg-surface-elevated;
+    -fx-background-radius: 16px;
+    -fx-padding: 24px;
+    -fx-effect: dropshadow(gaussian, -fx-shadow-sm, 12, 0, 0, 3);
+    -fx-border-color: -fx-border-light;
+    -fx-border-width: 1px;
+    -fx-border-radius: 16px;
+}
+
+.chat-messages {
+    -fx-background-color: -fx-bg-tertiary;
+    -fx-background-radius: 12px;
+    -fx-padding: 20px;
+    -fx-spacing: 12px;
+    -fx-border-color: -fx-border-light;
+    -fx-border-width: 1px;
+    -fx-border-radius: 12px;
+}
+
+.user-message {
+    -fx-background-color: #0ea5a4;
+    -fx-background-radius: 16px 16px 4px 16px;
+    -fx-text-fill: #f8fafc;
+    -fx-padding: 12px 16px;
+    -fx-wrap-text: true;
+    -fx-effect: dropshadow(gaussian, -fx-shadow-sm, 6, 0, 0, 2);
+}
+
+.bot-message {
+    -fx-background-color: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
+    -fx-background-radius: 16px 16px 16px 4px;
+    -fx-text-fill: -fx-text-primary;
+    -fx-padding: 12px 16px;
+    -fx-wrap-text: true;
+    -fx-effect: dropshadow(gaussian, -fx-shadow-sm, 6, 0, 0, 2);
+    -fx-border-color: -fx-border-light;
+    -fx-border-width: 1px;
+    -fx-border-radius: 16px 16px 16px 4px;
+}
+
+.chat-input {
+    -fx-background-color: -fx-bg-surface;
+    -fx-border-color: -fx-border-medium;
+    -fx-border-width: 1px;
+    -fx-border-radius: 20px;
+    -fx-padding: 12px 18px;
+    -fx-font-size: 14px;
+    -fx-background-radius: 20px;
+    -fx-text-fill: -fx-text-primary;
+}
+
+.chat-input:focused {
+    -fx-border-color: -fx-primary-color;
+    -fx-effect: dropshadow(gaussian, -fx-shadow-sm, 8, 0, 0, 2);
+}
+
+/* Layout Components */
+.main-container {
+    -fx-background-color: -fx-bg-primary;
+    -fx-padding: 40px;
+    -fx-spacing: 30px;
+}
+
+.header {
+    -fx-background-color: -fx-bg-surface-elevated;
+    -fx-padding: 15px 30px;
+    -fx-border-color: -fx-border-medium;
+    -fx-border-width: 2px;
+    -fx-border-radius: 16px;
+    -fx-background-radius: 16px;
+    -fx-effect: dropshadow(gaussian, -fx-shadow-md, 12, 0, 0, 4);
+    -fx-spacing: 20px;
+    -fx-alignment: center-left;
+}
+
+.header-title {
+    -fx-font-family: -fx-font-family-secondary;
+    -fx-font-size: 28px;
+    -fx-font-weight: 700;
+    -fx-text-fill: -fx-text-primary;
+    -fx-min-width: 200px;
+    -fx-wrap-text: false;
+}
+
+.header-subtitle {
+    -fx-font-size: 18px;
+    -fx-font-weight: 400;
+    -fx-text-fill: -fx-text-secondary;
+}
+
+/* Navigation Buttons - Header */
+.nav-button {
+    -fx-background-color: #f1f5f9;
+    -fx-text-fill: -fx-text-primary;
+    -fx-background-radius: 8px;
+    -fx-border-radius: 8px;
+    -fx-border-color: -fx-border-light;
+    -fx-border-width: 1px;
+    -fx-font-size: 14px;
+    -fx-font-weight: 500;
+    -fx-padding: 8px 16px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, -fx-shadow-sm, 6, 0, 0, 2);
+    -fx-min-width: 100px;
+    -fx-max-width: 120px;
+}
+
+.nav-button:hover {
+    -fx-background-color: #e2e8f0;
+    -fx-border-color: -fx-primary-color;
+    -fx-effect: dropshadow(gaussian, -fx-shadow-md, 8, 0, 0, 3);
+}
+
+.nav-button:pressed {
+    -fx-background-color: #cbd5e1;
+    -fx-effect: dropshadow(gaussian, -fx-shadow-sm, 4, 0, 0, 1);
+}
+
+/* User Info Styling */
+.user-info {
+    -fx-spacing: 10px;
+    -fx-alignment: center-right;
+}
+
+.user-welcome-text {
+    -fx-font-size: 14px;
+    -fx-font-weight: 500;
+    -fx-text-fill: -fx-text-secondary;
+}
+
+/* Navigation Cards - Clean Pastel Theme */
+.nav-card {
+    -fx-background-color: -fx-bg-surface-elevated;
+    -fx-background-radius: 16px;
+    -fx-border-radius: 16px;
+    -fx-padding: 24px;
+    -fx-spacing: 16px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, -fx-shadow-sm, 10, 0, 0, 2);
+    -fx-border-color: -fx-border-light;
+    -fx-border-width: 1px;
+    -fx-min-width: 280px;
+    -fx-min-height: 200px;
+}
+
+.nav-card:hover {
+    -fx-effect: dropshadow(gaussian, -fx-shadow-md, 15, 0, 0, 4);
+    -fx-scale-x: 1.02;
+    -fx-scale-y: 1.02;
+}
+
+.nav-card:pressed {
+    -fx-scale-x: 0.98;
+    -fx-scale-y: 0.98;
+    -fx-effect: dropshadow(gaussian, -fx-shadow-sm, 8, 0, 0, 2);
+}
+
+/* Special card colors - Clean Pastel Theme */
+.mood-card {
+    -fx-background-color: #E8F5E9;
+    -fx-border-color: #4CAF50;
+    -fx-border-width: 2px;
+}
+
+.mood-card:hover {
+    -fx-border-color: #45a049;
+    -fx-background-color: #F3E5F5;
+    -fx-effect: dropshadow(gaussian, rgba(76, 175, 80, 0.3), 15, 0, 0, 4);
+}
+
+.chat-card {
+    -fx-background-color: #E0F2F7;
+    -fx-border-color: -fx-primary-color;
+    -fx-border-width: 2px;
+}
+
+.chat-card:hover {
+    -fx-border-color: #0891b2;
+    -fx-background-color: #E0F7FA;
+    -fx-effect: dropshadow(gaussian, rgba(14, 165, 164, 0.3), 15, 0, 0, 4);
+}
+
+.help-card {
+    -fx-background-color: #FFEBEE;
+    -fx-border-color: -fx-error-color;
+    -fx-border-width: 2px;
+}
+
+.help-card:hover {
+    -fx-border-color: #d32f2f;
+    -fx-background-color: #FFF3E0;
+    -fx-effect: dropshadow(gaussian, rgba(239, 68, 68, 0.3), 15, 0, 0, 4);
+}
+
+.meditation-card {
+    -fx-background-color: #F3E5F5;
+    -fx-border-color: #9c27b0;
+    -fx-border-width: 2px;
+}
+
+.meditation-card:hover {
+    -fx-border-color: #7b1fa2;
+    -fx-background-color: #E1BEE7;
+    -fx-effect: dropshadow(gaussian, rgba(156, 39, 176, 0.3), 15, 0, 0, 4);
+}
+
+.progress-card {
+    -fx-background-color: #FFF3E0;
+    -fx-border-color: -fx-secondary-color;
+    -fx-border-width: 2px;
+}
+
+.progress-card:hover {
+    -fx-border-color: #d97706;
+    -fx-background-color: #FFE0B2;
+    -fx-effect: dropshadow(gaussian, rgba(245, 158, 11, 0.3), 15, 0, 0, 4);
+}
+
+.resources-card {
+    -fx-background-color: #E3F2FD;
+    -fx-border-color: -fx-info-color;
+    -fx-border-width: 2px;
+}
+
+.resources-card:hover {
+    -fx-border-color: #1976d2;
+    -fx-background-color: #BBDEFB;
+    -fx-effect: dropshadow(gaussian, rgba(59, 130, 246, 0.3), 15, 0, 0, 4);
+}
+
+.nav-card-icon {
+    -fx-font-size: 48px;
+    -fx-effect: dropshadow(gaussian, -fx-shadow-md, 8, 0, 0, 2);
+}
+
+.nav-card-title {
+    -fx-font-family: -fx-font-family-secondary;
+    -fx-font-size: 20px;
+    -fx-font-weight: 700;
+    -fx-text-fill: -fx-text-primary;
+}
+
+.nav-card-description {
+    -fx-font-size: 14px;
+    -fx-text-fill: -fx-text-secondary;
+    -fx-wrap-text: true;
+}
+
+/* Surface Cards */
+.surface-card {
+    -fx-background-color: -fx-bg-surface-elevated;
+    -fx-background-radius: 20px;
+    -fx-border-radius: 20px;
+    -fx-effect: dropshadow(gaussian, -fx-shadow-md, 20, 0, 0, 4);
+    -fx-padding: 32px;
+}
+
+/* ================================================
+   Dashboard Navigation Cards
+   ================================================ */
+
+.nav-card {
+    -fx-background-color: -fx-bg-surface-elevated;
+    -fx-background-radius: 20px;
+    -fx-border-radius: 20px;
+    -fx-effect: dropshadow(gaussian, -fx-shadow-sm, 15, 0, 0, 3);
+    -fx-padding: 28px;
+    -fx-cursor: hand;
+    -fx-alignment: center;
+    -fx-spacing: 18px;
+    -fx-pref-width: 300px;
+    -fx-pref-height: 200px;
+    -fx-border-color: transparent;
+    -fx-border-width: 2px;
+}
+
+.nav-card:hover {
+    -fx-effect: dropshadow(gaussian, -fx-shadow-lg, 25, 0, 0, 8);
+    -fx-scale-x: 1.02;
+    -fx-scale-y: 1.02;
+    -fx-border-color: -fx-primary-light;
+    -fx-background-color: derive(-fx-bg-surface-elevated, 2%);
+}
+
+.nav-card:pressed {
+    -fx-scale-x: 0.98;
+    -fx-scale-y: 0.98;
+    -fx-effect: dropshadow(gaussian, -fx-shadow-sm, 10, 0, 0, 2);
+}
+
+/* Special card colors - High Contrast Vibrant */
+.mood-card {
+    -fx-background-color: linear-gradient(135deg, #064e3b 0%, #065f46 100%);
+    -fx-border-color: #22c55e;
+    -fx-border-width: 2px;
+}
+
+.mood-card:hover {
+    -fx-border-color: #16a34a;
+    -fx-background-color: linear-gradient(135deg, #064e3b 0%, #047857 100%);
+    -fx-effect: dropshadow(gaussian, rgba(34, 197, 94, 0.6), 25, 0, 0, 10);
+}
+
+.chat-card {
+    -fx-background-color: linear-gradient(135deg, #4c1d95 0%, #5b21b6 100%);
+    -fx-border-color: #7c3aed;
+    -fx-border-width: 2px;
+}
+
+.chat-card:hover {
+    -fx-border-color: #6d28d9;
+    -fx-background-color: linear-gradient(135deg, #4c1d95 0%, #6d28d9 100%);
+    -fx-effect: dropshadow(gaussian, rgba(124, 58, 237, 0.6), 25, 0, 0, 10);
+}
+
+.help-card {
+    -fx-background-color: linear-gradient(135deg, #7f1d1d 0%, #991b1b 100%);
+    -fx-border-color: #ef4444;
+    -fx-border-width: 2px;
+}
+
+.help-card:hover {
+    -fx-border-color: #dc2626;
+    -fx-background-color: linear-gradient(135deg, #7f1d1d 0%, #b91c1c 100%);
+    -fx-effect: dropshadow(gaussian, rgba(239, 68, 68, 0.6), 25, 0, 0, 10);
+}
+
+.meditation-card {
+    -fx-background-color: linear-gradient(135deg, #581c87 0%, #6b21a8 100%);
+    -fx-border-color: #a855f7;
+    -fx-border-width: 2px;
+}
+
+.meditation-card:hover {
+    -fx-border-color: #9333ea;
+    -fx-background-color: linear-gradient(135deg, #581c87 0%, #7c3aed 100%);
+    -fx-effect: dropshadow(gaussian, rgba(168, 85, 247, 0.6), 25, 0, 0, 10);
+}
+
+.progress-card {
+    -fx-background-color: linear-gradient(135deg, #92400e 0%, #a16207 100%);
+    -fx-border-color: #f59e0b;
+    -fx-border-width: 2px;
+}
+
+.progress-card:hover {
+    -fx-border-color: #d97706;
+    -fx-background-color: linear-gradient(135deg, #92400e 0%, #ca8a04 100%);
+    -fx-effect: dropshadow(gaussian, rgba(245, 158, 11, 0.6), 25, 0, 0, 10);
+}
+
+.resources-card {
+    -fx-background-color: linear-gradient(135deg, #0c4a6e 0%, #075985 100%);
+    -fx-border-color: #06b6d4;
+    -fx-border-width: 2px;
+}
+
+.resources-card:hover {
+    -fx-border-color: #0891b2;
+    -fx-background-color: linear-gradient(135deg, #0c4a6e 0%, #0e7490 100%);
+    -fx-effect: dropshadow(gaussian, rgba(6, 182, 212, 0.6), 25, 0, 0, 10);
+}
+
+.nav-card-icon {
+    -fx-font-size: 48px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 5, 0, 0, 1);
+}
+
+.nav-card-title {
+    -fx-font-family: -fx-font-family-secondary;
+    -fx-font-size: 20px;
+    -fx-font-weight: 600;
+    -fx-text-fill: -fx-text-primary;
+    -fx-text-alignment: center;
+}
+
+.nav-card-description {
+    -fx-font-size: 14px;
+    -fx-text-fill: -fx-text-secondary;
+    -fx-text-alignment: center;
+    -fx-wrap-text: true;
+    -fx-line-spacing: 2px;
+}
+
+/* ================================================
+   Buttons & Interactive Elements
+   ================================================ */
+
+/* Primary Buttons */
+.primary-button {
+    /* prominent teal primary button with strong light text for visibility */
+    -fx-background-color: #0ea5a4;
+    -fx-text-fill: #f8fafc;
+    -fx-font-family: -fx-font-family-secondary;
+    -fx-font-size: 15px;
+    -fx-font-weight: 600;
+    -fx-background-radius: 12px;
+    -fx-border-radius: 12px;
+    -fx-padding: 12px 28px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(14,165,164,0.18), 14, 0, 0, 6);
+    -fx-border-width: 0;
+}
+
+.primary-button:hover {
+    -fx-background-color: #0891b2;
+    -fx-effect: dropshadow(gaussian, rgba(14,165,164,0.24), 18, 0, 0, 8);
+    -fx-scale-x: 1.02;
+    -fx-scale-y: 1.02;
+}
+
+.primary-button:pressed {
+    -fx-background-color: #0e7490;
+    -fx-effect: dropshadow(gaussian, rgba(3,105,161,0.18), 8, 0, 0, 4);
+    -fx-scale-x: 0.98;
+    -fx-scale-y: 0.98;
+}
+
+/* Secondary Buttons */
+.secondary-button {
+    /* lighter secondary button (surface background) with dark text for better contrast */
+    -fx-background-color: #f1f5f9;
+    -fx-text-fill: -fx-text-primary;
+    -fx-font-family: -fx-font-family-secondary;
+    -fx-font-size: 14px;
+    -fx-font-weight: 500;
+    -fx-background-radius: 12px;
+    -fx-border-radius: 12px;
+    -fx-border-color: -fx-border-medium;
+    -fx-border-width: 1px;
+    -fx-padding: 10px 22px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(15,23,42,0.04), 8, 0, 0, 4);
+}
+
+.secondary-button:hover {
+    -fx-background-color: #e2e8f0;
+    -fx-border-color: -fx-border-dark;
+    -fx-effect: dropshadow(gaussian, rgba(15,23,42,0.06), 10, 0, 0, 6);
+    -fx-scale-x: 1.02;
+    -fx-scale-y: 1.02;
+}
+
+.secondary-button:pressed {
+    -fx-background-color: #cbd5e1;
+    -fx-scale-x: 0.98;
+    -fx-scale-y: 0.98;
+}
+
+/* Success Buttons */
+.success-button {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: #f8fafc;
+    -fx-font-family: -fx-font-family-secondary;
+    -fx-font-size: 15px;
+    -fx-font-weight: 600;
+    -fx-background-radius: 12px;
+    -fx-border-radius: 12px;
+    -fx-padding: 12px 28px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(16,185,129,0.14), 12, 0, 0, 6);
+}
+
+.success-button:hover {
+    -fx-background-color: #45a049;
+    -fx-effect: dropshadow(gaussian, rgba(34, 197, 94, 0.5), 18, 0, 0, 8);
+    -fx-scale-x: 1.02;
+    -fx-scale-y: 1.02;
+}
+
+/* ================================================
+   Form Elements
+   ================================================ */
+
+/* Form Containers */
+.form-container {
+    -fx-background-color: -fx-bg-surface-elevated;
+    -fx-background-radius: 20px;
+    -fx-border-radius: 20px;
+    -fx-effect: dropshadow(gaussian, -fx-shadow-md, 20, 0, 0, 4);
+    -fx-padding: 36px;
+    -fx-spacing: 24px;
+}
+
+/* Form Labels */
+.form-label {
+    -fx-font-family: -fx-font-family-secondary;
+    -fx-font-size: 15px;
+    -fx-font-weight: 600;
+    -fx-text-fill: -fx-text-primary;
+}
+
+/* Form Fields */
+.form-field {
+    -fx-background-color: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    -fx-background-radius: 12px;
+    -fx-border-radius: 12px;
+    -fx-border-color: -fx-border-light;
+    -fx-border-width: 2px;
+    -fx-padding: 14px 18px;
+    -fx-font-size: 15px;
+    -fx-text-fill: -fx-text-primary;
+    -fx-prompt-text-fill: -fx-text-muted;
+    -fx-min-height: 48px;
+}
+
+.form-field:focused {
+    -fx-border-color: -fx-primary-color;
+    -fx-background-color: linear-gradient(135deg, #ffffff 0%, #f0f9ff 100%);
+    -fx-effect: dropshadow(gaussian, rgba(139, 92, 246, 0.2), 12, 0, 0, 2);
+}
+
+/* Validation Messages */
+.error-message {
+    -fx-text-fill: -fx-error-color;
+    -fx-font-size: 13px;
+    -fx-font-weight: 500;
+}
+
+.success-message {
+    -fx-text-fill: -fx-success-color;
+    -fx-font-size: 13px;
+    -fx-font-weight: 500;
+}
+
+/* ================================================
+   Utility / Component-specific classes for WelcomeView
+   ================================================ */
+.card-title {
+    -fx-font-size: 24px;
+    -fx-font-weight: 700;
+    -fx-text-fill: -fx-text-primary;
+}
+
+.card-description {
+    -fx-font-size: 16px;
+    -fx-text-fill: -fx-text-secondary;
+    -fx-text-alignment: center;
+    -fx-wrap-text: true;
+}
+
+.muted-text {
+    -fx-font-size: 14px;
+    -fx-text-fill: -fx-text-muted;
+}
+
+.muted-small {
+    -fx-font-size: 12px;
+    -fx-text-fill: -fx-text-muted;
+}
+
+.privacy-note {
+    -fx-font-size: 13px;
+    -fx-text-fill: -fx-text-primary;
+    -fx-text-alignment: center;
+    -fx-wrap-text: true;
+}
+
+.welcome-separator {
+    -fx-background-color: -fx-border-medium;
+    -fx-pref-height: 2px;
+    -fx-opacity: 1;
+}
+
+/* ================================================
+   Mood Tracking Components
+   ================================================ */
+
+.mood-container {
+    -fx-background-color: -fx-bg-surface-elevated;
+    -fx-background-radius: 20px;
+    -fx-border-radius: 20px;
+    -fx-padding: 36px;
+    -fx-spacing: 28px;
+}
+
+.mood-selector {
+    -fx-background-color: -fx-bg-tertiary;
+    -fx-background-radius: 50;
+    -fx-padding: 18;
+    -fx-cursor: hand;
+    -fx-alignment: center;
+    -fx-spacing: 12;
+    -fx-border-color: transparent;
+    -fx-border-width: 3px;
+}
+
+.mood-selector:hover {
+    -fx-background-color: -fx-border-light;
+    -fx-effect: dropshadow(gaussian, -fx-shadow-sm, 8, 0, 0, 2);
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
+
+.mood-selector.selected {
+    -fx-background-color: linear-gradient(135deg, -fx-primary-color 0%, -fx-primary-dark 100%);
+    -fx-border-color: -fx-primary-light;
+    -fx-effect: dropshadow(gaussian, rgba(99, 102, 241, 0.3), 12, 0, 0, 4);
+}
+
+.mood-selector.selected .mood-emoji {
+    -fx-effect: dropshadow(gaussian, rgba(255,255,255,0.5), 5, 0, 0, 0);
+}
+
+.mood-emoji {
+    -fx-font-size: 36px;
+}
+
+.mood-label {
+    -fx-font-size: 15px;
+    -fx-font-weight: 600;
+    -fx-text-fill: -fx-text-primary;
+}
+
+.mood-selector.selected .mood-label {
+    -fx-text-fill: #f8fafc;
+}
+
+/* ================================================
+   Quote Display
+   ================================================ */
+
+.quote-container {
+    -fx-background-color: -fx-bg-surface-elevated;
+    -fx-background-radius: 20px;
+    -fx-border-radius: 20px;
+    -fx-padding: 48px;
+    -fx-effect: dropshadow(gaussian, -fx-shadow-md, 20, 0, 0, 4);
+    -fx-alignment: center;
+    -fx-spacing: 24px;
+}
+
+.quote-text {
+    -fx-font-size: 24px;
+    -fx-font-style: italic;
+    -fx-text-fill: -fx-text-primary;
+    -fx-text-alignment: center;
+    -fx-wrap-text: true;
+    -fx-line-spacing: 4px;
+}
+
+.quote-author {
+    -fx-font-size: 18px;
+    -fx-font-weight: 600;
+    -fx-text-fill: -fx-primary-color;
+    -fx-text-alignment: center;
+}
+
+/* ================================================
+   Chat Interface
+   ================================================ */
+
+.chat-container {
+    -fx-background-color: linear-gradient(135deg, #1e293b 0%, #334155 50%, #475569 100%);
+    -fx-background-radius: 20px;
+    -fx-padding: 24px;
+    -fx-effect: dropshadow(gaussian, rgba(124, 58, 237, 0.3), 15, 0, 0, 6);
+}
+
+.chat-messages {
+    -fx-background-color: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    -fx-background-radius: 16px;
+    -fx-padding: 20px;
+    -fx-spacing: 12px;
+}
+
+.user-message {
+    -fx-background-color: linear-gradient(135deg, #7c3aed 0%, #6d28d9 50%, #5b21b6 100%);
+    -fx-background-radius: 18px 18px 6px 18px;
+    -fx-text-fill: #f8fafc;
+    -fx-padding: 14px 18px;
+    -fx-wrap-text: true;
+    -fx-effect: dropshadow(gaussian, rgba(124, 58, 237, 0.5), 10, 0, 0, 4);
+}
+
+.bot-message {
+    -fx-background-color: linear-gradient(135deg, #334155 0%, #475569 100%);
+    -fx-background-radius: 18px 18px 18px 6px;
+    -fx-text-fill: #f8fafc;
+    -fx-padding: 14px 18px;
+    -fx-wrap-text: true;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 8, 0, 0, 3);
+}
+
+.chat-input {
+    -fx-background-color: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+    -fx-border-color: #64748b;
+    -fx-border-width: 2px;
+    -fx-border-radius: 25px;
+    -fx-padding: 14px 22px;
+    -fx-font-size: 15px;
+    -fx-background-radius: 25px;
+    -fx-text-fill: #f8fafc;
+}
+
+.chat-input:focused {
+    -fx-border-color: #7c3aed;
+    -fx-effect: dropshadow(gaussian, rgba(124, 58, 237, 0.4), 15, 0, 0, 4);
+}
+
+/* ================================================
+   Emergency Helplines
+   ================================================ */
+
+.helpline-card {
+    -fx-background-color: -fx-bg-surface-elevated;
+    -fx-background-radius: 16px;
+    -fx-padding: 24px;
+    -fx-effect: dropshadow(gaussian, -fx-shadow-sm, 8, 0, 0, 2);
+    -fx-spacing: 12px;
+    -fx-border-color: transparent;
+    -fx-border-width: 2px;
+}
+
+.helpline-card:hover {
+    -fx-border-color: -fx-error-color;
+    -fx-effect: dropshadow(gaussian, -fx-shadow-md, 12, 0, 0, 4);
+    -fx-scale-x: 1.01;
+    -fx-scale-y: 1.01;
+}
+
+.helpline-name {
+    -fx-font-size: 20px;
+    -fx-font-weight: 700;
+    -fx-text-fill: -fx-text-primary;
+}
+
+.helpline-phone {
+    -fx-font-size: 18px;
+    -fx-font-weight: 600;
+    -fx-text-fill: -fx-primary-color;
+}
+
+.helpline-description {
+    -fx-font-size: 15px;
+    -fx-text-fill: -fx-text-secondary;
+    -fx-wrap-text: true;
+    -fx-line-spacing: 2px;
+}
+
+.helpline-badge {
+    -fx-background-color: -fx-success-color;
+    -fx-background-radius: 14px;
+    -fx-text-fill: #f8fafc;
+    -fx-font-size: 13px;
+    -fx-font-weight: 600;
+    -fx-padding: 6px 12px;
+}
+
+/* ================================================
+   Scrollbars & Lists
+   ================================================ */
+
+.scroll-pane {
+    -fx-background: -fx-background-primary;
+    -fx-background-color: transparent;
+}
+
+.scroll-pane .viewport {
+    -fx-background-color: transparent;
+}
+
+.scroll-pane .scroll-bar:vertical {
+    -fx-background-color: transparent;
+    -fx-pref-width: 10px;
+}
+
+.scroll-pane .scroll-bar .track {
+    -fx-background-color: transparent;
+}
+
+.scroll-pane .scroll-bar .thumb {
+    -fx-background-color: -fx-border-medium;
+    -fx-background-radius: 5px;
+}
+
+.scroll-pane .scroll-bar .thumb:hover {
+    -fx-background-color: -fx-text-muted;
+}
+
+/* ================================================
+   Hyperlinks & Text
+   ================================================ */
+
+.hyperlink {
+    -fx-text-fill: -fx-primary-color;
+    -fx-font-weight: 500;
+    -fx-underline: false;
+    -fx-border-width: 0;
+    -fx-cursor: hand;
+}
+
+.hyperlink:hover {
+    -fx-text-fill: -fx-primary-hover;
+    -fx-underline: true;
+}
+
+.hyperlink:visited {
+    -fx-text-fill: -fx-primary-color;
+}
+
+/* ================================================
+   Separators & Dividers
+   ================================================ */
+
+.separator {
+    -fx-background-color: -fx-border-light;
+    -fx-pref-height: 1px;
+    -fx-max-height: 1px;
+}
+
+/* ================================================
+   Checkbox Controls
+   ================================================ */
+
+.check-box {
+    -fx-text-fill: -fx-text-secondary;
+    -fx-font-size: 15px;
+}
+
+.check-box .box {
+    -fx-background-color: -fx-bg-surface;
+    -fx-border-color: -fx-border-medium;
+    -fx-border-width: 2px;
+    -fx-background-radius: 6px;
+    -fx-border-radius: 6px;
+}
+
+.check-box:selected .mark {
+    -fx-background-color: #f8fafc;
+}
+
+.check-box:selected .box {
+    -fx-background-color: -fx-primary-color;
+    -fx-border-color: -fx-primary-color;
+}
+
+/* ================================================
+   Progress Indicators
+   ================================================ */
+
+.progress-bar {
+    -fx-background-color: -fx-bg-tertiary;
+    -fx-background-radius: 12px;
+}
+
+.progress-bar .track {
+    -fx-background-color: -fx-bg-tertiary;
+    -fx-background-radius: 12px;
+}
+
+.progress-bar .bar {
+    -fx-background-color: linear-gradient(to right, -fx-primary-color, -fx-accent-color);
+    -fx-background-radius: 12px;
+}
+
+/* ================================================
+   Status Indicators
+   ================================================ */
+
+.status-good {
+    -fx-text-fill: -fx-success-color;
+}
+
+.status-warning {
+    -fx-text-fill: -fx-warning-color;
+}
+
+.status-danger {
+    -fx-text-fill: -fx-error-color;
+}
+
+/* ================================================
+   Animations & Transitions
+   ================================================ */
+
+.fade-in {
+    -fx-opacity: 0;
+}
+
+.slide-in {
+    -fx-translate-x: -50;
+}
+
+.bounce-in {
+    -fx-scale-x: 0.8;
+    -fx-scale-y: 0.8;
+}
+
+/* ================================================
+   Special Effects
+   ================================================ */
+
+.glow-effect {
+    -fx-effect: dropshadow(gaussian, rgba(99, 102, 241, 0.3), 20, 0, 0, 0);
+}
+
+.shadow-elevated {
+    -fx-effect: dropshadow(gaussian, -fx-shadow-lg, 25, 0, 0, 8);
+}
+
+.gradient-primary {
+    -fx-background-color: linear-gradient(135deg, -fx-primary-color 0%, -fx-primary-dark 100%);
+}
+
+.gradient-success {
+    -fx-background-color: linear-gradient(135deg, -fx-success-color 0%, -fx-accent-hover 100%);
+}
+
+/* Chat View Styling */
+.main-container {
+    -fx-background-color: -fx-surface;
+    -fx-alignment: center;
+    -fx-spacing: 16px;
+}
+
+.header-title {
+    -fx-text-fill: -fx-text-primary;
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, -fx-shadow-sm, 4, 0, 0, 1);
+}
+
+.header-subtitle {
+    -fx-text-fill: -fx-text-secondary;
+    -fx-font-size: 16px;
+}
+
+.chat-message {
+    -fx-background-color: -fx-surface;
+    -fx-padding: 12px 16px;
+    -fx-background-radius: 12px;
+    -fx-border-radius: 12px;
+    -fx-border-color: -fx-border-light;
+    -fx-border-width: 1px;
+    -fx-effect: dropshadow(gaussian, -fx-shadow-sm, 8, 0, 0, 2);
+}
+
+.chat-message.user {
+    -fx-background-color: -fx-primary-color;
+    -fx-text-fill: #f8fafc;
+}
+
+.chat-message.bot {
+    -fx-background-color: -fx-bg-surface-elevated;
+    -fx-text-fill: -fx-text-primary;
+}
+
+.chat-input-container {
+    -fx-background-color: -fx-surface;
+    -fx-border-color: -fx-border-medium;
+    -fx-border-width: 1px;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-padding: 8px 12px;
+}
+
+.chat-input-field {
+    -fx-font-size: 14px;
+    -fx-background-color: transparent;
+    -fx-text-fill: -fx-text-primary;
+    -fx-prompt-text-fill: -fx-text-muted;
+}
